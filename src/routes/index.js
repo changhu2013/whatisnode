@@ -1,12 +1,6 @@
-var router = require('koa-router')();
+var router = require('koa-router')()
+var home = require('./home');
 
-router.get('/', async function (ctx, next) {
-  ctx.state = {
-    title: 'what is node !!!!'
-  };
+router.use(home.routes());
 
-  await ctx.render('index', {
-  });
-})
-
-module.exports = router;
+module.exports = router

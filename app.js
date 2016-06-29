@@ -12,4 +12,6 @@ if(env !== 'production'){
   app = './src/app';
 }
 
+console.log('NODE_ENV = ' + env);
+
 module.exports = require(app);
