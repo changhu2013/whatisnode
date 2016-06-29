@@ -15,9 +15,9 @@ const index = require('./routes/index');
 app.use(convert(bodyparser));
 app.use(convert(json()));
 app.use(convert(logger()));
-app.use(require('koa-static')(__dirname + '/public'));
+app.use(require('koa-static')(__dirname + '/../public'));
 
-app.use(views(__dirname + '/views', {
+app.use(views(__dirname + '/../views', {
   extension: 'ejs'
 }));
 
