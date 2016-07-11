@@ -1,5 +1,5 @@
-var router = require('koa-router')()
-var home = require('./home');
+const router = require('koa-router')()
+const home = require('./home');
 
 router.use(home.routes());
 
