@@ -1,5 +1,5 @@
 const co = require('co');
-const router = require('koa-router')({prefix : 'home'});
+const router = require('koa-router')(/*{prefix : 'home'}*/);
 
 router.post('/run', async function(ctx, next){
 
