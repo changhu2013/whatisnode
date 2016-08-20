@@ -1,0 +1,33 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "plugins": [],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {},
+    "allowImportExportEverywhere": false
+  },
+  "env": {
+    "browser": true,
+    "amd": true,
+    "es6": true,
+    "node": true,
+    "mocha": true,
+    "jquery": true
+  },
+  "globals": {},
+  "rules": {
+    "comma-dangle": 1,
+    "quotes": ["error", "double"], //暂时关闭使用双引号为error的规则
+    "no-undef": 2, //禁止使用未声明的变量
+    "global-strict": 0,
+    "no-extra-semi": 1, //禁止不必要的分号
+    "no-underscore-dangle": 0,
+    "no-console": 1,
+    "no-unused-vars": 2,
+    "no-trailing-spaces": [1, { "skipBlankLines": true }],
+    "no-unreachable": 2,
+    "no-alert": 2
+  }
+}
