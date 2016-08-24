@@ -19,7 +19,7 @@
   "globals": {},
   "rules": {
     "comma-dangle": 1,
-    "quotes": ["error", "double"], //暂时关闭使用双引号为error的规则
+    "quotes": ["error", "single"], //暂时关闭使用双引号为error的规则
     "no-undef": 2, //禁止使用未声明的变量
     "global-strict": 0,
     "no-extra-semi": 1, //禁止不必要的分号
