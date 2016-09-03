@@ -1,6 +1,6 @@
 
 var config = require('config');
-var app = require('../app');
+var app = require('./app/index');
 var http = require('http');
 
 /**

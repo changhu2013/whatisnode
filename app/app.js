@@ -8,8 +8,7 @@ const json = require('koa-json');
 const onerror = require('koa-onerror');
 const bodyparser = require('koa-bodyparser')();
 const logger = require('koa-logger');
-
-const index = require('./routes/index');
+const routes = require('./routes');
 
 // middlewares
 app.use(convert(bodyparser));
@@ -28,7 +27,7 @@ app.use(async (ctx, next) => {
   console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
 });
 
-router.use('/', index.routes(), index.allowedMethods());
+router.use('/', routes.routes(), routes.allowedMethods());
 
 app.use(router.routes(), router.allowedMethods());
 // response
